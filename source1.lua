@@ -51,12 +51,13 @@ function Utility:TweenObject(obj, properties, duration, ...)
 end
 
 
+-- Modern Color Themes for Xavo
 local themes = {
-    SchemeColor = Color3.fromRGB(74, 99, 135),
-    Background = Color3.fromRGB(36, 37, 43),
-    Header = Color3.fromRGB(28, 29, 34),
-    TextColor = Color3.fromRGB(255,255,255),
-    ElementColor = Color3.fromRGB(32, 32, 38)
+    SchemeColor = Color3.fromRGB(88, 101, 242),  -- Discord Blurple
+    Background = Color3.fromRGB(32, 34, 37),      -- Modern Dark
+    Header = Color3.fromRGB(40, 43, 48),          -- Slightly Lighter
+    TextColor = Color3.fromRGB(220, 221, 222),    -- Soft White
+    ElementColor = Color3.fromRGB(47, 49, 54)     -- Element Background
 }
 local themeStyles = {
     DarkTheme = {
