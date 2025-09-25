@@ -60,76 +60,65 @@ local themes = {
     ElementColor = Color3.fromRGB(47, 49, 54)     -- Element Background
 }
 local themeStyles = {
-    DarkTheme = {
-        SchemeColor = Color3.fromRGB(64, 64, 64),
-        Background = Color3.fromRGB(0, 0, 0),
-        Header = Color3.fromRGB(0, 0, 0),
-        TextColor = Color3.fromRGB(255,255,255),
+    Discord = {
+        SchemeColor = Color3.fromRGB(88, 101, 242),
+        Background = Color3.fromRGB(32, 34, 37),
+        Header = Color3.fromRGB(40, 43, 48),
+        TextColor = Color3.fromRGB(220, 221, 222),
+        ElementColor = Color3.fromRGB(47, 49, 54)
+    },
+    Cyberpunk = {
+        SchemeColor = Color3.fromRGB(255, 20, 147),  -- Hot Pink
+        Background = Color3.fromRGB(12, 12, 23),      -- Deep Dark
+        Header = Color3.fromRGB(20, 20, 35),
+        TextColor = Color3.fromRGB(0, 255, 255),      -- Cyan
+        ElementColor = Color3.fromRGB(25, 25, 40)
+    },
+    Neon = {
+        SchemeColor = Color3.fromRGB(57, 255, 20),   -- Bright Green
+        Background = Color3.fromRGB(8, 8, 8),
+        Header = Color3.fromRGB(15, 15, 15),
+        TextColor = Color3.fromRGB(240, 240, 240),
         ElementColor = Color3.fromRGB(20, 20, 20)
-    },
-    LightTheme = {
-        SchemeColor = Color3.fromRGB(150, 150, 150),
-        Background = Color3.fromRGB(255,255,255),
-        Header = Color3.fromRGB(200, 200, 200),
-        TextColor = Color3.fromRGB(0,0,0),
-        ElementColor = Color3.fromRGB(224, 224, 224)
-    },
-    BloodTheme = {
-        SchemeColor = Color3.fromRGB(227, 27, 27),
-        Background = Color3.fromRGB(10, 10, 10),
-        Header = Color3.fromRGB(5, 5, 5),
-        TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(20, 20, 20)
-    },
-    GrapeTheme = {
-        SchemeColor = Color3.fromRGB(166, 71, 214),
-        Background = Color3.fromRGB(64, 50, 71),
-        Header = Color3.fromRGB(36, 28, 41),
-        TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(74, 58, 84)
     },
     Ocean = {
-        SchemeColor = Color3.fromRGB(86, 76, 251),
-        Background = Color3.fromRGB(26, 32, 58),
-        Header = Color3.fromRGB(38, 45, 71),
-        TextColor = Color3.fromRGB(200, 200, 200),
-        ElementColor = Color3.fromRGB(38, 45, 71)
+        SchemeColor = Color3.fromRGB(0, 150, 255),   -- Ocean Blue
+        Background = Color3.fromRGB(18, 30, 45),
+        Header = Color3.fromRGB(25, 40, 60),
+        TextColor = Color3.fromRGB(200, 220, 240),
+        ElementColor = Color3.fromRGB(30, 45, 65)
     },
-    Midnight = {
-        SchemeColor = Color3.fromRGB(26, 189, 158),
-        Background = Color3.fromRGB(44, 62, 82),
-        Header = Color3.fromRGB(57, 81, 105),
-        TextColor = Color3.fromRGB(255, 255, 255),
-        ElementColor = Color3.fromRGB(52, 74, 95)
+    Sunset = {
+        SchemeColor = Color3.fromRGB(255, 107, 107), -- Coral
+        Background = Color3.fromRGB(45, 30, 35),
+        Header = Color3.fromRGB(60, 40, 50),
+        TextColor = Color3.fromRGB(255, 240, 245),
+        ElementColor = Color3.fromRGB(65, 45, 55)
     },
-    Sentinel = {
-        SchemeColor = Color3.fromRGB(230, 35, 69),
-        Background = Color3.fromRGB(32, 32, 32),
-        Header = Color3.fromRGB(24, 24, 24),
-        TextColor = Color3.fromRGB(119, 209, 138),
-        ElementColor = Color3.fromRGB(24, 24, 24)
+    Forest = {
+        SchemeColor = Color3.fromRGB(76, 175, 80),   -- Material Green
+        Background = Color3.fromRGB(25, 35, 25),
+        Header = Color3.fromRGB(35, 50, 35),
+        TextColor = Color3.fromRGB(230, 245, 230),
+        ElementColor = Color3.fromRGB(40, 55, 40)
     },
-    Synapse = {
-        SchemeColor = Color3.fromRGB(46, 48, 43),
-        Background = Color3.fromRGB(13, 15, 12),
-        Header = Color3.fromRGB(36, 38, 35),
-        TextColor = Color3.fromRGB(152, 99, 53),
-        ElementColor = Color3.fromRGB(24, 24, 24)
+    Royal = {
+        SchemeColor = Color3.fromRGB(156, 39, 176),  -- Deep Purple
+        Background = Color3.fromRGB(25, 15, 35),
+        Header = Color3.fromRGB(40, 25, 55),
+        TextColor = Color3.fromRGB(240, 230, 255),
+        ElementColor = Color3.fromRGB(45, 30, 65)
     },
-    Serpent = {
-        SchemeColor = Color3.fromRGB(0, 166, 58),
-        Background = Color3.fromRGB(31, 41, 43),
-        Header = Color3.fromRGB(22, 29, 31),
-        TextColor = Color3.fromRGB(255,255,255),
-        ElementColor = Color3.fromRGB(22, 29, 31)
+    Minimal = {
+        SchemeColor = Color3.fromRGB(100, 100, 100),
+        Background = Color3.fromRGB(248, 249, 250),
+        Header = Color3.fromRGB(238, 239, 240),
+        TextColor = Color3.fromRGB(33, 37, 41),
+        ElementColor = Color3.fromRGB(228, 229, 230)
     }
 }
 local oldTheme = ""
-
-local SettingsT = {
-
-}
-
+local SettingsT = {}
 local Name = "XavoConfig.JSON"
 
 pcall(function()
